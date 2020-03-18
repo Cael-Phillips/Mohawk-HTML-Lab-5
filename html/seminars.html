@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cycling Tours</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/cyclestyles.css">
+	<style>
+		table{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		td{
+			border: 1px solid black;
+			padding-left: 5px;
+			padding-right: 30px;
+		}
+		th{
+			background: #ddeeff;
+			border: 1px solid black;
+			padding-top: 10px;
+			padding-left: 5px;
+			padding-right: 5px;
+			padding-bottom: 25px;
+		}
+		#heading th{
+			background: #888888;
+			padding: 15px;
+		}
+		#schedule{
+			padding-left: 100px;
+			padding-right: 100px;
+		}
+		.group{
+			text-align: center;
+			font-weight: bold;
+			background-image: url(images/dust.jpg);
+		}
+		.cycle{
+			background: lightskyblue;
+		}
+		.distance{
+			background: #ADFF2F;
+		}
+		.repair{
+			background: #BA55D3;
+		}
+		.planning{
+			background: #FFB6C1;
+		}
+		#beginner{
+			height: 40px;
+			width: 20px;
+			background: lightskyblue;
+		}
+		#longdistance{
+			height: 40px;
+			width: 20px;
+			background: #ADFF2F;
+		}
+		#bikerepair{
+			height: 40px;
+			width: 20px;
+			background: #BA55D3;
+		}
+		#trip{
+			height: 40px;
+			width: 20px;
+			background: #FFB6C1;
+		}
+		span{
+			padding-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Cycling Trip Seminars</h1>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Reviews</a></li>
+				<li><a href="seminars.html">Seminars</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id = "schedule">
+				<div>
+					Legend:
+					<br>
+					<span id="beginner">&nbsp</span> Beginner Cycling &nbsp
+					<span id="longdistance">&nbsp</span> Long Distance Cycling &nbsp
+					<span id="bikerepair">&nbsp</span> Bicycle Repair &nbsp
+					<span id="trip">&nbsp</span> Trip Planning &nbsp
+				</div>
+				<table>
+					<rowgroup>
+						<row class = "day">
+					</rowgroup>
+					<tr id="heading">
+						<th>Day</th>
+						<th>7 am - 9 am</th>
+						<th>9 am - 11 am</th>
+						<th>11 am - 12 pm</th>
+						<th>12 pm - 2 pm</th>
+						<th>2 pm - 4 pm</th>
+						<th>6 pm - 8 pm</th>
+						<th>8 pm - 10 pm</th>
+					</tr>
+					<tr>
+						<th>Monday</th>
+						<td colspan="7" class="group">Reserved for groups</td>
+					</tr>
+					<tr>
+						<th>Tuesday</th>
+						<td class="repair">Bicycle Repair</td>
+						<td class="cycle" colspan="4">Beginner Cycling</td>
+						<td class="planning" colspan="2">Trip Planning</td>
+					</tr>
+					<tr>
+						<th>Wednesday</th>
+						<td rowspan="2" class="distance">Long Distance Cycling Part 1</td>
+						<td></td>
+						<td class="cycle">Beginner Cycling</td>
+						<td class="planning" rowspan="2">Trip Planning for Asia</td>
+						<td rowspan="3" colspan="2" class="repair"> Bicycle Repair</td>
+						<td class="distance" rowspan="2">Long Distance Cycling Part 2</td>
+					</tr>
+					<tr>
+						<th>Thursday</th>
+						<td class="cycle">Beginner Cycling</td>
+						<td></td>		
+					</tr>
+					<tr>
+						<th>Friday</th>
+						<td rowspan="4" class="planning">Trip Planning for Europe</td>
+						<td></td>
+						<td class="cycle">Beginner Cycle</td>
+						<td></td>
+						<td></td>		
+
+					</tr>
+					<tr>
+						<th>Saturday</th>
+						<td rowspan="2" colspan="3" class="repair">Bicycle Repair</td>
+						<td class="cycle">Beginning Cycling</td>
+						<td rowspan="2" colspan="2" class="distance">Long Distance Cycling Part 1 and 2</td>
+					</tr>
+					<tr>
+						<th>Sunday</th>
+						<td></td>
+						
+					<tr>
+						<th>Holiday</th>
+						<td class="distance">Long Distance Cycling </td>
+						<td colspan="5" class="group">No Seminars</td>
+					</tr>
+				</table>
+
+			</div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cycling Tours</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/cyclestyles.css">
+	<style>
+		
+		legend{
+			color: white;
+		}
+
+		fieldset{
+			background: #4681A4;
+			border: 2px solid white;
+			margin-bottom: 10px;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		form{
+			border: 2px solid black;
+			border-collapse: collapse;
+		}
+		#lastname{
+			margin-left: 1px;
+		}
+		#phone{
+			margin-left: 32px;
+		}
+		#email{
+			margin-left: 38px;
+		}
+		#reviewform{
+			padding-left: 100px;
+			padding-right: 100px;
+		}
+		.formbutton{
+			font-weight: bold;
+			background: #ffffe6;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Fall 2019 Reviews</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Reviews</a></li>
+				<li><a href="html/seminars.html">Seminars</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id = "reviewform">
+			  <form method="POST" name="mainform" id="mainform" 
+			        action="https://csunix.mohawkcollege.ca/tooltime/showit.pl">
+				<fieldset>					
+					<fieldset>
+						<legend>About You (optional)</legend>
+
+						<label>I usually prefer to take trips this time of year (select all that apply): </label>
+						<div>
+							<select name="season" size="4" multiple>
+								<option value="Winter">Winter</option>
+							    <option value="Spring">Spring</option>
+							    <option value="Summer">Summer</option>
+							    <option value="Fall">Fall</option>
+							</select>
+						</div>
+						<br>
+						<label for="firstname">First Name: </label>
+						<input type="text" name="firstname" id="firstname" maxlength="20" size="20"><br>
+						<label for="lastname">Last Name: </label>
+						<input type="text" name="lastname" id="lastname" maxlength="20" size="20">
+						<br>						
+						<label for="phone">Phone: </label>
+						<input type="text" name="phone" id="phone" placeholder="123-456-7890" maxlength="12" size="12">
+						<br>
+						<label for="email">Email: </label>
+						<input type="text" name="email" id="email" placeholder="name@example.com" maxlength="40" size="40"> 
+						<br>
+					</fieldset>
+
+					
+
+					<fieldset>
+						<legend>I would be interested in these trips: (check all that apply)</legend>
+						
+						<div>
+						<input type="checkbox" name="trip" id="trip" value="Coastal"> Sea or Lake Coast
+						</div>
+						<div>
+						<input type="checkbox" name="trip" id="trip" value="Rural" > Rural
+						</div>
+						<div>
+						<input type="checkbox" name="trip" id="trip" value="Mountain" > Mountains
+						</div>
+						<div>
+						<input type="checkbox" name="trip" id="trip" value="other" checked = "checked" > Other (please specify) <input type="input" name="trip" id="trip">
+						</div>					
+					</fieldset>		
+
+					<fieldset>
+						<legend>Trip Reviews</legend>
+						 <select name="trails">
+						 	<option value="NSCabot" selected>Nova Scotia Cabot Trail</option>
+						 	<option value="BCCoast">B. C. Coast</option>
+						 	<option value="OLS">Ontario Lake Superior</option>
+						 	<option value="PEI">PEI</option>
+						 	<option value="Alberta Rural">Alberta Rural</option>
+						 </select>
+						 <select name="length">
+						 	<option value="5d" selected>5 Days</option>
+						 	<option value="7d">7 Days</option>
+						 	<option value="10d">10 Days</option>
+						 	<option value="14d">14 Days</option>
+						 </select>
+						<div id = "rating">
+							<label for="rating">Your Rating: </label><br>
+							<input type="radio" name="rating" value="4" id="rating" checked="checked" /><img src="images/wheel_sm.jpg" alt="wheel"><img src="images/wheel_sm.jpg" alt="wheel"><img src="images/wheel_sm.jpg" alt="wheel"><img src="images/wheel_sm.jpg" alt="wheel">
+							<br>
+							<input type="radio" name="rating" value="3" id="rating"/><img src="images/wheel_sm.jpg" alt="wheel"><img src="images/wheel_sm.jpg" alt="wheel"><img src="images/wheel_sm.jpg" alt="wheel">
+							<br>
+							<input type="radio" name="rating" value="2" id="rating"/><img src="images/wheel_sm.jpg" alt="wheel"><img src="images/wheel_sm.jpg" alt="wheel">
+							<br>
+							<input type="radio" name="rating" value="4" id="rating"/><img src="images/wheel_sm.jpg" alt="wheel">
+							<br>
+							<br>
+						</div>
+						<div>
+							<label for="comments">Comments: </label><br>
+							<textarea name="comments" rows="7" cols="65">
+								
+							</textarea>
+
+						</div>
+
+					</fieldset>
+
+					
+					<input type="submit" value="SEND REVIEW" class = "formbutton" > 
+					<input type="reset" value="CANCEL" class = "formbutton" >	
+					<input type="hidden" name="fomrname" value="Cael Phillips Trip Review">
+				</fieldset>
+
+			  </form>
+			</div>
+
+
+			<img src="images/form_filled.png" alt="form_filled" title="filled out form">
+
+
+</body>
+</html>
